@@ -1,6 +1,6 @@
 # MySpace - 공간 예약 플랫폼 통합 프로젝트
 
-![MySpace Logo](https://via.placeholder.com/500x200?text=MySpace+-+Space+Booking+Platform)
+![MySpace Logo](./docs/images/logo.png)
 
 > **여러 공간을 한 플랫폼에서 예약하세요**  
 > 음악 연습실(MusicSpace) · 아이스링크(IceSpace) · 다양한 공간(ThisSpace)
@@ -252,19 +252,20 @@ cd Core/backend
 # 새로운 API 엔드포인트 추가
 # 예: /api/bookings/available-times
 
-# Core 빌드 및 배포
+# Core 빌드 및 배포 (로컬 개발용)
 npm run build
-npm publish  # npm 레지스트리에 배포
+# (선택) 나중에 프라이빗 npm 패키지로 배포하고 싶을 때만 실행
+# npm publish  # npm 레지스트리에 배포
 ```
 
 ### 2단계: 플랫폼별 기능 개발
 ```bash
 cd MusicSpace/backend
-# Core를 의존성으로 설치
-npm install @myspace/core
+# Core를 의존성으로 설치 (초기에는 로컬 경로 사용)
+npm install ../../Core/backend
 
-# MusicSpace 특화 API 추가
-# 예: /api/studios/[id]/instruments
+# (선택) 나중에 npm에 @myspace/core를 배포하면 아래처럼 변경
+# npm install @myspace/core
 ```
 
 ### 3단계: 프론트엔드 개발
