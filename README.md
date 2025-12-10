@@ -4,6 +4,7 @@
 
 > **여러 공간을 한 플랫폼에서 예약하세요**  
 > 음악 연습실(MusicSpace) · 아이스링크(IceSpace) · 다양한 공간(ThisSpace)
+<br>
 
 ## 🎯 프로젝트 개요
 
@@ -16,6 +17,7 @@
 | **MusicSpace** | 음악 연습실(피아노, 드럼, 보컬 등) 예약 서비스 | 🚀 개발 중 |
 | **IceSpace** | 아이스링크, 스케이트장 예약 서비스 | 📋 계획 중 |
 | **ThisSpace** | 범용 공간 예약 서비스 (회의실, 스튜디오 등) | 📋 계획 중 |
+<br>
 
 ## 📁 저장소 구조
 
@@ -113,6 +115,7 @@ MySpace/
     ├── API.md                   # API 문서 (Core)
     └── DEPLOYMENT.md            # 배포 가이드
 ```
+<br>
 
 ## 🚀 빠른 시작
 
@@ -146,6 +149,7 @@ cd ../frontend
 npm install
 npm start
 ```
+<br>
 
 ## 📚 문서
 
@@ -155,6 +159,7 @@ npm start
 - [**데이터베이스 스키마**](./docs/DATABASE.md) - DB 구조
 - [**API 문서**](./docs/API.md) - REST API
 - [**배포 가이드**](./docs/DEPLOYMENT.md) - Azure 배포
+<br>
 
 ## 🏗️ 아키텍처
 
@@ -204,6 +209,7 @@ npm start
 | **데이터베이스** | PostgreSQL | 14+ |
 | **인증** | NextAuth.js | 4.x |
 | **배포** | Azure App Service + GitHub Actions | - |
+<br>
 
 ## 🔄 Core 라이브러리 역할
 
@@ -221,6 +227,7 @@ npm start
 - ✅ **공유 훅** (useBooking, useSpaces)
 - ✅ **API 클라이언트** (axios 래퍼)
 - ✅ **공유 타입/상수**
+<br>
 
 ## 🔌 각 플랫폼의 역할
 
@@ -235,6 +242,7 @@ npm start
 - 🎨 링크 상세 페이지
 - 🔍 레벨별 클래스 검색
 - 📱 스포츠 관련 UI/UX
+<br>
 
 ## 🛠️ 개발 워크플로우
 
@@ -265,6 +273,7 @@ cd MusicSpace/frontend
 # Core 컴포넌트 활용
 import { BookingForm, SpaceCard } from '@myspace/core-ui';
 ```
+<br>
 
 ## 📊 데이터베이스 설계
 
@@ -283,6 +292,7 @@ import { BookingForm, SpaceCard } from '@myspace/core-ui';
 - `rinks` - 아이스링크
 - `ice_classes` - 클래스
 - `rink_amenities` - 편의시설
+<br>
 
 ## 🔐 환경 변수
 
@@ -304,6 +314,7 @@ CORE_API_URL=http://localhost:3001
 # 추가 설정
 KAKAO_MAP_API_KEY=your_kakao_key
 ```
+<br>
 
 ## 🚢 배포
 
@@ -321,6 +332,7 @@ Azure Subscription
 ```
 
 배포 가이드는 [DEPLOYMENT.md](./docs/DEPLOYMENT.md)를 참조하세요.
+<br>
 
 ## 📈 마일스톤
 
@@ -329,6 +341,7 @@ Azure Subscription
 - [ ] **Phase 3**: ThisSpace 일반화 (2025년 Q3)
 - [ ] **Phase 4**: 결제/정산 시스템 (2025년 Q4)
 - [ ] **Phase 5**: 모바일 앱 스토어 배포 (2026년 Q1)
+<br>
 
 ## 👥 팀 및 기여
 
@@ -337,10 +350,12 @@ Azure Subscription
 - **프론트엔드**: UI/UX, 반응형 디자인
 
 기여 방법은 [CONTRIBUTING.md](./CONTRIBUTING.md)를 참조하세요.
+<br>
 
 ## 📝 라이센스
 
 MIT License - 자유롭게 사용, 수정, 배포 가능
+<br>
 
 ## 🤝 지원
 
