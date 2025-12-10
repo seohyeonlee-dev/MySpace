@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpace Test Deploy</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 700px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 { 
+            color: #667eea; 
+            margin-bottom: 20px; 
+            font-size: 2.8em; 
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .status {
+            background: #f0f7ff;
+            padding: 25px;
+            border-left: 5px solid #667eea;
+            text-align: left;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .status h3 { 
+            color: #667eea; 
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .status-item {
+            background: #d4edda;
+            color: #155724;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .status-item::before {
+            content: "✅";
+            font-size: 1.2em;
+        }
+        .badges {
+            margin: 30px 0;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.95em;
+        }
+        .next-step {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 MySpace</h1>
+        <p class="subtitle">테스트 배포 페이지</p>
+        
+        <div class="status">
+            <h3>📊 배포 상태</h3>
+            <div class="status-item">프론트엔드 배포 성공</div>
+            <div class="status-item">HTTPS 자동 설정</div>
+            <div class="status-item">GitHub Actions CI/CD 활성화</div>
+        </div>
+
+        <div class="badges">
+            <span class="badge">Azure Static Web Apps</span>
+            <span class="badge">Windows PowerShell</span>
+            <span class="badge">Phase 0 테스트</span>
+        </div>
+
+        <div class="next-step">
+            <strong>✨ 다음 단계</strong>
+            <p style="margin-top: 10px; font-size: 0.95em;">
+                Core 백엔드 개발 및 배포 (Phase 1)
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>MySpace - 공간 예약 플랫폼</p>
+            <p style="margin-top: 8px; font-size: 0.85em;">
+                배포 시간: <span id="deployTime"></span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 현재 시간 표시
+        const now = new Date().toLocaleString('ko-KR', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        document.getElementById('deployTime').textContent = now;
+    </script>
+</body>
+</html>
