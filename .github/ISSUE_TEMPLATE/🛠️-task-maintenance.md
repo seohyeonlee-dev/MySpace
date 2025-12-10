@@ -1,5 +1,5 @@
 ---
-name: "\U0001F4DD Task/Maintenance"
+name: "\U0001F6E0️ Task/Maintenance"
 about: 환경 설정, 리팩토링, 문서 작업 등 일반 작업
 title: "[CHORE/REFACTOR/DOCS]"
 labels: ''
